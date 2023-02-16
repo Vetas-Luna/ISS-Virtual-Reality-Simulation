@@ -3,11 +3,176 @@ guid: a72c1d54a49719945bfc24839a851536
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Airlock_1
+    second: {fileID: 2100000, guid: 52fe8be7d1ee9ee469f6e9a5e6fccbd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Airlock_2
+    second: {fileID: 2100000, guid: 30d32a70747083642bedaa9b1dcb2513, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Columbus_Bulkhead
+    second: {fileID: 2100000, guid: 29cc8f2c7f22b5e48a21c771d3a38c43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Columbus_Racks01
+    second: {fileID: 2100000, guid: 3bbb93f2976f9c4488e4d201b2e76283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Columbus_Racks02
+    second: {fileID: 2100000, guid: f956be5701e8e9e4da1a0f4602763974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Columbus_Racks03
+    second: {fileID: 2100000, guid: a097ba883cfd8054dbec18e779523c9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cupola_Diffuse
+    second: {fileID: 2100000, guid: 82223f422d63fd84b9f169c285d3337b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cupola_Glass
+    second: {fileID: 2100000, guid: 9be85b851c476d34487434cf0bf30128, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generic_Hub
+    second: {fileID: 2100000, guid: 27d35842eec9faf4a81527992c3411b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generic_Lights
+    second: {fileID: 2100000, guid: 8748bbb4e1972234c84603b86094445a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generic_Metals
+    second: {fileID: 2100000, guid: 18bccc7f4a4935c4fb275c9f83a654e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generic_Misc_Details
+    second: {fileID: 2100000, guid: b0add87741b18454695b925511ae3933, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generic_Misc_Details_LIGHTS
+    second: {fileID: 2100000, guid: 9fc6341fd77a9424ea465c7f5aaa58da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JLP_Int_Bulkhead
+    second: {fileID: 2100000, guid: 319b7e1e41893804d957289440a612a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JLP_Int_Racks
+    second: {fileID: 2100000, guid: 24ce72a1fe499864187e456338fd7cbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JPM_Bulkhead
+    second: {fileID: 2100000, guid: 4079e8c7d0286374182b616bf82367bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JPM_Racks_01
+    second: {fileID: 2100000, guid: 7d3e22629bb436e43b5a028d1fb174de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JPM_Racks_02
+    second: {fileID: 2100000, guid: 98c04bba0a0394e4bbdd63a8309b5fa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JPM_Racks_03
+    second: {fileID: 2100000, guid: 745d4792df170f4408bdd0d6baa56cfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: e04e51444abb17b4d89ee93470dc587c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node1_Int_Bulkhead
+    second: {fileID: 2100000, guid: 622e82ac83ca43f4fa5ea665e976f8dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node1_Int_Rack
+    second: {fileID: 2100000, guid: a73be2bc92413a64ea67d67b8222bce4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node2_Bulkhead
+    second: {fileID: 2100000, guid: 92c3c4ecad2a67a439358fd8867564ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node2_Rack
+    second: {fileID: 2100000, guid: 7a59f110902a43a40a24a43d4ad6c12b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node3_Bulkhead
+    second: {fileID: 2100000, guid: 5d6f53160efa51c41bd827d373ef6ce2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node3_Int_Rack_01
+    second: {fileID: 2100000, guid: 2c5dd9485523b7a419e28d2862342b21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Node3_Int_Rack_02
+    second: {fileID: 2100000, guid: d4ea7e75c983b484a9e5396f4b802ca1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PMM_01
+    second: {fileID: 2100000, guid: 93f1fdbe0b4586248b0ab3035d89d689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: USLab_AFT_Bulkhead
+    second: {fileID: 2100000, guid: 47c84ee4e372057428a873c460e1ab8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: USLab_FWD_Bulkhead
+    second: {fileID: 2100000, guid: e70acd9cbb523fb4486122ffbe00cd86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: USLab_Racks_01
+    second: {fileID: 2100000, guid: 4ee82eef1f0385742a1241e16d1f7728, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: USLab_Racks_02
+    second: {fileID: 2100000, guid: 7f8dae4c72b89c04390394297f511a1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: USLab_Racks_03
+    second: {fileID: 2100000, guid: e40b795db2f928b48b3aa398702a92eb, type: 2}
   materials:
-    materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialImportMode: 1
+    materialName: 2
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BlinkEffect : MonoBehaviour
 {
-    //public GameObject item;
+    public GameObject item;
     public Material highlightItemMaterial;
 
-    public MeshRenderer itemMeshRenderer;
-    Material itemMaterial;
+    MeshRenderer itemMeshRenderer;
+    public Material itemMaterial;
 
     readonly float duration = 1f;
     private bool pingpong = true;
@@ -16,8 +16,8 @@ public class BlinkEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       //itemMeshRenderer = item.GetComponent<MeshRenderer>();
-       itemMaterial = new Material(itemMeshRenderer.material); 
+       itemMeshRenderer = item.GetComponent<MeshRenderer>();
+       //itemMaterial = new Material(itemMeshRenderer.material); 
     }
 
     // Update is called once per frame

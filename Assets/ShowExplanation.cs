@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowExplanation : MonoBehaviour
 {
+    public GameObject task;
     public GameObject prevText;
     public GameObject newText;
     public GameObject prevButton;
@@ -23,7 +24,7 @@ public class ShowExplanation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == item.tag){
-            if(prevText.activeSelf == true){
+            if(task.activeSelf == true){
                 prevText.SetActive(false);
                 newText.SetActive(true);
                 prevButton.SetActive(false);

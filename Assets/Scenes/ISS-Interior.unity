@@ -1833,7 +1833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -32.5}
+  m_AnchoredPosition: {x: 100, y: -75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408527052
@@ -3784,6 +3784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217b635f8e23143f9a14b7a3c4b3c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  task: {fileID: 4585599012794237608}
   prevText: {fileID: 278422204}
   newText: {fileID: 512769963}
   prevButton: {fileID: 4585599013390444971}
@@ -4646,8 +4647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669bf93e61b0544e78aa0e708807a6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 741412591}
   highlightItemMaterial: {fileID: 2100000, guid: 21bc5d99f973a4c41b4aaa90b8926008, type: 2}
-  itemMeshRenderer: {fileID: 741412596}
+  itemMaterial: {fileID: 2100000, guid: 130cd327cb69f5c4ab2bcdb608fbd58c, type: 2}
 --- !u!1 &748744622
 GameObject:
   m_ObjectHideFlags: 0
@@ -7229,6 +7231,7 @@ GameObject:
   - component: {fileID: 1233289733}
   - component: {fileID: 1233289732}
   - component: {fileID: 1233289731}
+  - component: {fileID: 1233289734}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -7263,6 +7266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217b635f8e23143f9a14b7a3c4b3c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  task: {fileID: 151881151}
   prevText: {fileID: 168965770}
   newText: {fileID: 408527050}
   prevButton: {fileID: 1569019925}
@@ -7299,7 +7303,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1233289734}
+        m_TargetAssemblyTypeName: PlantSeed, Assembly-CSharp
+        m_MethodName: ShowSeedMound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -7336,6 +7352,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.09999998
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1233289734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233289729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46da977beba284f67833e7e43e082fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seedPacket: {fileID: 1425947852}
+  dirtMound: {fileID: 1706948888}
 --- !u!1 &1284152235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,8 +8677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669bf93e61b0544e78aa0e708807a6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightItemMaterial: {fileID: 2100000, guid: 21bc5d99f973a4c41b4aaa90b8926008, type: 2}
-  itemMeshRenderer: {fileID: 0}
+  item: {fileID: 1425947852}
+  highlightItemMaterial: {fileID: 2100000, guid: df6219926368041ac926da7e3dbc92c7, type: 2}
+  itemMaterial: {fileID: 2100000, guid: d3293c07c46938149bd6b68f6f5ab4d1, type: 2}
 --- !u!1 &1438384542
 GameObject:
   m_ObjectHideFlags: 0
@@ -10652,6 +10683,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701383991}
   m_Mesh: {fileID: 4300002, guid: 957c18644814403499a9e2c9f49e03ce, type: 3}
+--- !u!1 &1706948888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706948889}
+  - component: {fileID: 1706948892}
+  - component: {fileID: 1706948891}
+  - component: {fileID: 1706948890}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1706948889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706948888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0155, y: -0.133, z: -0.2383}
+  m_LocalScale: {x: 0.09498296, y: 0.09543056, z: 0.15547884}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1967749362}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1706948890
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706948888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1706948891
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706948888}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8155d173ae29a415cb735d81de9542d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1706948892
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706948888}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1802754545
 GameObject:
   m_ObjectHideFlags: 0
@@ -12982,8 +13110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669bf93e61b0544e78aa0e708807a6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 0}
   highlightItemMaterial: {fileID: 2100000, guid: 21bc5d99f973a4c41b4aaa90b8926008, type: 2}
-  itemMeshRenderer: {fileID: 0}
+  itemMaterial: {fileID: 0}
 --- !u!1 &1960679535
 GameObject:
   m_ObjectHideFlags: 0
@@ -13232,6 +13361,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1233289730}
+  - {fileID: 1706948889}
   m_Father: {fileID: 923338625}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13882,8 +14012,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669bf93e61b0544e78aa0e708807a6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 2011153576}
   highlightItemMaterial: {fileID: 2100000, guid: 21bc5d99f973a4c41b4aaa90b8926008, type: 2}
-  itemMeshRenderer: {fileID: 0}
+  itemMaterial: {fileID: 2100000, guid: 54e3b58855d184a6cb281dea1d5728b0, type: 2}
 --- !u!1 &2018650581
 GameObject:
   m_ObjectHideFlags: 0
@@ -15118,6 +15249,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1425947862}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &4585599012029440659
 MonoBehaviour:

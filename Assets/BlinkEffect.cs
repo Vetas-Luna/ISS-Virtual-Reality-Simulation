@@ -8,7 +8,7 @@ public class BlinkEffect : MonoBehaviour
     public Material highlightItemMaterial;
 
     MeshRenderer itemMeshRenderer;
-    Material itemMaterial;
+    public Material itemMaterial;
 
     readonly float duration = 1f;
     private bool pingpong = true;
@@ -17,7 +17,7 @@ public class BlinkEffect : MonoBehaviour
     void Start()
     {
        itemMeshRenderer = item.GetComponent<MeshRenderer>();
-       itemMaterial = new Material(itemMeshRenderer.material); 
+       //itemMaterial = new Material(itemMeshRenderer.material); 
     }
 
     // Update is called once per frame
@@ -30,9 +30,11 @@ public class BlinkEffect : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(!(other.CompareTag("Work Table"))){
+        if(!(other.gameObject.CompareTag("Work Table"))){
             pingpong = false;
-            itemMeshRenderer.material = itemMaterial;
+            if(itemMeshRenderer != null){
+                itemMeshRenderer.material = itemMaterial;
+            }
         }
     }
 

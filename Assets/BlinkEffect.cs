@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BlinkEffect : MonoBehaviour
 {
-    public GameObject item;
+    //public GameObject item;
     public Material highlightItemMaterial;
 
-    MeshRenderer itemMeshRenderer;
+    public MeshRenderer itemMeshRenderer;
     Material itemMaterial;
 
     readonly float duration = 1f;
@@ -16,7 +16,7 @@ public class BlinkEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       itemMeshRenderer = item.GetComponent<MeshRenderer>();
+       //itemMeshRenderer = item.GetComponent<MeshRenderer>();
        itemMaterial = new Material(itemMeshRenderer.material); 
     }
 
@@ -30,9 +30,11 @@ public class BlinkEffect : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(!(other.CompareTag("Work Table"))){
+        if(!(other.gameObject.CompareTag("Work Table"))){
             pingpong = false;
-            itemMeshRenderer.material = itemMaterial;
+            if(itemMeshRenderer != null){
+                itemMeshRenderer.material = itemMaterial;
+            }
         }
     }
 

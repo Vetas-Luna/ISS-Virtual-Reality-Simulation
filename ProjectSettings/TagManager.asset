@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Work Table
+  - ruler
   layers:
   - Default
   - TransparentFX

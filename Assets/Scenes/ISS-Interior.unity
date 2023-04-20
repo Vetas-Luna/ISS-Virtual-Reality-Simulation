@@ -5391,8 +5391,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 37.374195, y: 16.34087, z: 15.505547}
-  m_Center: {x: 18.187098, y: -0.002783145, z: -0.3971385}
+  m_Size: {x: 37.374195, y: 16.34087, z: 12.203273}
+  m_Center: {x: 18.187098, y: -0.002783145, z: -2.0482645}
 --- !u!23 &868102132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13594,6 +13594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960679536}
   - component: {fileID: 1960679541}
+  - component: {fileID: 1960679542}
   m_Layer: 3
   m_Name: RightHand Controller
   m_TagString: Player
@@ -13798,6 +13799,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!65 &1960679542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960679535}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1967749361
 GameObject:
   m_ObjectHideFlags: 0
@@ -14766,6 +14780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023463784}
   - component: {fileID: 2023463789}
+  - component: {fileID: 2023463790}
   m_Layer: 3
   m_Name: LeftHand Controller
   m_TagString: Player
@@ -14970,6 +14985,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!65 &2023463790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023463783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2074529273
 GameObject:
   m_ObjectHideFlags: 0

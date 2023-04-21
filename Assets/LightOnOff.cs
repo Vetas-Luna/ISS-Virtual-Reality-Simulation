@@ -12,6 +12,16 @@ public class LightOnOff : MonoBehaviour
     public GameObject txtToDisplay;             //display the UI text
     private bool PlayerInZone;                  //check if the player is in trigger
     public GameObject lightorobj;
+
+    public GameObject task;
+    public GameObject prevText;
+    public GameObject newText;
+    public GameObject prevButton;
+    public GameObject newButton;
+
+    public GameObject newPlant;
+    public GameObject dirtMound;
+
     private void Start()
     {
         PlayerInZone = false;                   //player not in zone       
@@ -20,10 +30,14 @@ public class LightOnOff : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerInZone && Input.GetKeyDown(KeyCode.F))           //if in zone and press F key
+        if (PlayerInZone && Input.GetKeyDown(KeyCode.F) && task.activeSelf == true)           //if in zone and press F key
         {
             lightorobj.SetActive(!lightorobj.activeSelf);
             gameObject.GetComponent<Animator>().Play("switch");
+
+            if(dirtMound.activeSelf){
+                ShowExplanation();
+            }
         }
     }
 
@@ -43,5 +57,20 @@ public class LightOnOff : MonoBehaviour
             PlayerInZone = false;
             txtToDisplay.SetActive(false);
         }
+    }
+
+    private void ShowExplanation(){
+        if(task.activeSelf == true){
+                prevText.SetActive(false);
+                newText.SetActive(true);
+                prevButton.SetActive(false);
+                newButton.SetActive(true);
+                GrowPlant();
+            }
+    }
+
+    private void GrowPlant(){
+        dirtMound.SetActive(false);
+        newPlant.SetActive(true);
     }
 }

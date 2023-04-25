@@ -27,10 +27,8 @@ public class XRDirectClimbInteractor : XRDirectInteractor
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-        Debug.Log("Selected\n");
         if(args.interactableObject.transform.gameObject.tag == "Climb")
         {
-            Debug.Log("Active!\n");
             ClimbHandActivated?.Invoke(_controllerName);
         }
     }

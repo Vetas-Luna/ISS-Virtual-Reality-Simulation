@@ -1,18 +1,2 @@
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
-testing testing
+In condensed matter physics, a Bose–Einstein condensate is a state of matter that is typically formed when a gas of bosons, at very low densities, is cooled to temperatures very close to absolute zero. Researchers with NASA's Cold Atom Lab have managed to produce this uniquely wave-like state of matter onboard the ISS using both rubidium and potassium. The longer observing times coupled with the colder temperatures are two of the most profound reasons as to why this experiment is important in microgravity and what it will allow for in future applications.
 

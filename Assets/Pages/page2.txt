@@ -1,3 +1,1 @@
-1
-2
-3
+The Robonaut is a humanoid robot that has been on and off-board NASA's International Space Station since 2012. It was built by researchers at NASA's Johnson Space Center in collaboration with General Motors and Oceaneering in order to create a dexterous tool that can reduce the human risk factor of potentially hazardous environments. Since these initial tests, NASA has developed more humanoid robots like the Robonaut 2, the Valkyrie, and the Centaur that are all intended for space travel and exploration of other planets.

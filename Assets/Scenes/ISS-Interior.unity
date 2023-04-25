@@ -21534,14 +21534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In condensed matter physics, a Bose\u2013Einstein condensate is a state
-    of matter that is typically formed when a gas of bosons, at very low densities,
-    is cooled to temperatures very close to absolute zero. Researchers with NASA's
-    Cold Atom Lab have managed to produce this uniquely wave-like state of matter
-    onboard the ISS using both rubidium and potassium. The longer observing times
-    coupled with the colder temperatures are two of the most profound reasons as
-    to why this experiment is important in microgravity and what it will allow for
-    in future applications."
+  m_text: Click ">>" or "<<" to continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21575,8 +21568,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -21669,7 +21662,7 @@ GameObject:
   - component: {fileID: 8584350659755417024}
   - component: {fileID: 8584350659755417025}
   m_Layer: 5
-  m_Name: BEC Info
+  m_Name: Experiment Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

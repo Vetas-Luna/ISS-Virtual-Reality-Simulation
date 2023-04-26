@@ -16,6 +16,7 @@ public class BlinkEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Active!");
        itemMeshRenderer = item.GetComponent<MeshRenderer>();
        //itemMaterial = new Material(itemMeshRenderer.material); 
     }

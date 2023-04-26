@@ -45,6 +45,7 @@ public class LightOnOff : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")     //if player in zone
         {
+            Debug.Log("player in zone");
             txtToDisplay.SetActive(true);
             PlayerInZone = true;
         }

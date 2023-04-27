@@ -30,9 +30,9 @@ public class LightOnOff : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerInZone && Input.GetKeyDown(KeyCode.F) && task.activeSelf == true)           //if in zone and press F key
+        if (PlayerInZone && task.activeSelf == true)           //if in zone and press F key
         {
-            lightorobj.SetActive(!lightorobj.activeSelf);
+            lightorobj.SetActive(true);
             gameObject.GetComponent<Animator>().Play("switch");
 
             if(dirtMound.activeSelf){

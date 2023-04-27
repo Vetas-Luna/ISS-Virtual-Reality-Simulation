@@ -12,8 +12,8 @@ public class UpdateCompletedTasks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tMP_Input = gameObject.GetComponent<TMP_InputField>();
-        tMP_Input.text = mystring;
+        //tMP_Input = gameObject.GetComponent<TMP_InputField>();
+        //tMP_Input.text = mystring;
     }
 
     // Update is called once per frame
